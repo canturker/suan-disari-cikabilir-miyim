@@ -5,7 +5,7 @@
         <h1>Şu an dışarı çıkabilir miyim? 🤔</h1>
         <div class="disari-form">
           <Input
-            type="text"
+            type="number"
             placeholder="Yaşınız"
             v-model="age"
             style="margin-bottom: 20px;"
@@ -109,42 +109,12 @@ export default {
       let isHoursBetween10and20 = now.getHours() >= 10 && now.getHours() < 20;
       let isHoursBetween10and13 = now.getHours() >= 10 && now.getHours() < 13;
       let isHoursBetween13and16 = now.getHours() >= 13 && now.getHours() < 16;
-      if (isWeekend) {
-        if (
-          this.json.weekend[this.ageCalculated][this.workStatus].outside ===
-            "10-20" &&
-          isHoursBetween10and20
-        ) {
-          this.$router.push("evet");
-          return false;
-        }
-        if (
-          this.json.weekend[this.ageCalculated][this.workStatus].outside ===
-            "10-13" &&
-          isHoursBetween10and13
-        ) {
-          this.$router.push("evet");
-          return false;
-        }
-        if (
-          this.json.weekend[this.ageCalculated][this.workStatus].outside ===
-            "13-16" &&
-          isHoursBetween13and16
-        ) {
-          this.$router.push("evet");
-          return false;
-        }
-        this.$router.push("hayir");
+      if (parseInt(this.age) >= 100) {
+        this.$router.push("covid");
       } else {
-        if (
-          this.json.weekday[this.ageCalculated][this.workStatus].outside ===
-          "yes"
-        ) {
-          this.$router.push("evet");
-          return false;
-        } else {
+        if (isWeekend) {
           if (
-            this.json.weekday[this.ageCalculated][this.workStatus].outside ===
+            this.json.weekend[this.ageCalculated][this.workStatus].outside ===
               "10-20" &&
             isHoursBetween10and20
           ) {
@@ -152,16 +122,15 @@ export default {
             return false;
           }
           if (
-            this.json.weekday[this.ageCalculated][this.workStatus].outside ===
+            this.json.weekend[this.ageCalculated][this.workStatus].outside ===
               "10-13" &&
             isHoursBetween10and13
           ) {
-            console.log("10-13 evet");
             this.$router.push("evet");
             return false;
           }
           if (
-            this.json.weekday[this.ageCalculated][this.workStatus].outside ===
+            this.json.weekend[this.ageCalculated][this.workStatus].outside ===
               "13-16" &&
             isHoursBetween13and16
           ) {
@@ -169,6 +138,41 @@ export default {
             return false;
           }
           this.$router.push("hayir");
+        } else {
+          if (
+            this.json.weekday[this.ageCalculated][this.workStatus].outside ===
+            "yes"
+          ) {
+            this.$router.push("evet");
+            return false;
+          } else {
+            if (
+              this.json.weekday[this.ageCalculated][this.workStatus].outside ===
+                "10-20" &&
+              isHoursBetween10and20
+            ) {
+              this.$router.push("evet");
+              return false;
+            }
+            if (
+              this.json.weekday[this.ageCalculated][this.workStatus].outside ===
+                "10-13" &&
+              isHoursBetween10and13
+            ) {
+              console.log("10-13 evet");
+              this.$router.push("evet");
+              return false;
+            }
+            if (
+              this.json.weekday[this.ageCalculated][this.workStatus].outside ===
+                "13-16" &&
+              isHoursBetween13and16
+            ) {
+              this.$router.push("evet");
+              return false;
+            }
+            this.$router.push("hayir");
+          }
         }
       }
     },
