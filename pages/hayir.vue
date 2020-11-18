@@ -90,7 +90,7 @@ h1 {
   text-align: center;
 }
 .banner-image-1 {
-  height: 35px;
+  height: 50px;
   text-align: center;
   margin-right: 10px;
 }
