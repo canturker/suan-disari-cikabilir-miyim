@@ -26,7 +26,10 @@
         </div>
       </Column>
       <div class="credits">
-        <h5>
+        <a href="https://ty.gl/lysol_website_112020" style="text-align: center">
+          <img class="banner-image" src="../assets/lysol.svg" alt=""
+        /></a>
+        <h5 style="text-align: center; margin-bottom: 5px;">
           <a href="https://www.linkedin.com/in/canturker/" target="_black"
             >ACT</a
           >
@@ -37,6 +40,12 @@
             >OK</a
           >
           tarafından 😂😂😂😂 eşliğinde yapılmıştır
+        </h5>
+        <h5 style="margin-bottom: 10px;text-align: center;">
+          <a href="https://cdn.adverport.com/lysol-dekont.jpeg" target="_blank">
+            Dünyanın bir numaralı dezenfektanı Lysol ortaklığı ile TEGV'e
+            destekte bulunulmuştur.
+          </a>
         </h5>
       </div>
     </Row>
@@ -231,5 +240,27 @@ h1 {
 .credits {
   position: absolute;
   bottom: 0;
+}
+.credits {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.text-center {
+  text-align: center;
+}
+.banner-image {
+  width: 60px;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.banner-image-1 {
+  height: 35px;
+  text-align: center;
+  margin-right: 10px;
 }
 </style>

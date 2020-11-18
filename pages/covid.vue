@@ -6,6 +6,7 @@
         <h1>Hey maşallah!</h1>
         <h1>Covid yıkamaz seni!</h1>
         <h1 class="reversed-text">💣💣💣💣💣💣💣</h1>
+        <h3></h3>
       </Column>
       <div class="credits">
         <h5>

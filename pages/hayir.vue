@@ -1,13 +1,29 @@
 <template>
   <Container class="disari-container">
     <Row class="disari-row">
-      <Column lg="6" md="6" sm="4">
+      <Column lg="6" md="6" sm="4" class="text-center">
+        <h5 style="margin-bottom: 20px;">#SevdiklerimiKorumakİcinBen</h5>
         <h1>🥺🥺🥺🥺🥺🥺🥺🥺</h1>
         <h1>Malesef şu an dışarı çıkamazsın</h1>
         <h1 class="reversed-text">🥺🥺🥺🥺🥺🥺🥺🥺</h1>
+        <h5>
+          Evde lysol bulundurmayı unutma!
+        </h5>
+        <h5 style="display: flex; justify-content: center; margin-top: 10px;">
+          <a href="https://ty.gl/lysol_website_112020"
+            ><img src="../assets/lysol.svg" class="banner-image-1" alt=""
+          /></a>
+          yoksa
+          <a
+            href="https://ty.gl/lysol_website_112020"
+            style="margin-left: 5px;"
+          >
+            hemen al</a
+          >
+        </h5>
       </Column>
       <div class="credits">
-        <h5>
+        <h5 style="text-align: center; margin-bottom: 5px;">
           <a href="https://www.linkedin.com/in/canturker/" target="_black"
             >ACT</a
           >
@@ -18,6 +34,12 @@
             >OK</a
           >
           tarafından 😂😂😂😂 eşliğinde yapılmıştır
+        </h5>
+        <h5 style="margin-bottom: 10px;text-align: center;">
+          <a href="https://cdn.adverport.com/lysol-dekont.jpeg" target="_blank">
+            Dünyanın bir numaralı dezenfektanı Lysol ortaklığı ile TEGV'e
+            destekte bulunulmuştur.
+          </a>
         </h5>
       </div>
     </Row>
@@ -51,5 +73,26 @@ h1 {
 .credits {
   position: absolute;
   bottom: 0;
+}
+.credits {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.text-center {
+  text-align: center;
+}
+.banner-image {
+  width: 50px;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+.banner-image-1 {
+  height: 35px;
+  text-align: center;
+  margin-right: 10px;
 }
 </style>
