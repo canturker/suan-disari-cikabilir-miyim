@@ -25,6 +25,20 @@
           <Button type="primary" @click="formClick">Kontrol Et</Button>
         </div>
       </Column>
+      <div class="credits">
+        <h5>
+          <a href="https://www.linkedin.com/in/canturker/" target="_black"
+            >ACT</a
+          >
+          ve
+          <a
+            href="https://www.linkedin.com/in/oguzhankarabulut/"
+            target="_blank"
+            >OK</a
+          >
+          tarafından 😂😂😂😂 eşliğinde yapılmıştır
+        </h5>
+      </div>
     </Row>
   </Container>
 </template>
@@ -212,5 +226,10 @@ h1 {
 .disari-submit {
   display: flex;
   justify-content: flex-end;
+}
+
+.credits {
+  position: absolute;
+  bottom: 0;
 }
 </style>

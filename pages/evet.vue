@@ -6,6 +6,20 @@
         <h1>Hurrraahhh!</h1>
         <h1 class="reversed-text">🏃‍♀️🏃‍♂️🏃‍♀️🏃‍♂️🏃‍♀️🏃‍♂️🏃‍♀️🏃‍♂️</h1>
       </Column>
+      <div class="credits">
+        <h5>
+          <a href="https://www.linkedin.com/in/canturker/" target="_black"
+            >ACT</a
+          >
+          ve
+          <a
+            href="https://www.linkedin.com/in/oguzhankarabulut/"
+            target="_blank"
+            >OK</a
+          >
+          tarafından 😂😂😂😂 eşliğinde yapılmıştır
+        </h5>
+      </div>
     </Row>
   </Container>
 </template>
@@ -48,5 +62,10 @@ h1 {
 .reversed-text {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
+}
+
+.credits {
+  position: absolute;
+  bottom: 0;
 }
 </style>
