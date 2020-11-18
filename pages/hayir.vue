@@ -21,9 +21,7 @@
             hemen al</a
           >
         </h5>
-      </Column>
-      <div class="credits">
-        <h5 style="text-align: center; margin-bottom: 5px;">
+        <h5 style="text-align: center; margin-bottom: 5px; margin-top: 50px;">
           <a href="https://www.linkedin.com/in/canturker/" target="_black"
             >ACT</a
           >
@@ -41,7 +39,8 @@
             destekte bulunulmuştur.
           </a>
         </h5>
-      </div>
+      </Column>
+      <div class="credits"></div>
     </Row>
   </Container>
 </template>
