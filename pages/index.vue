@@ -102,9 +102,9 @@ export default {
         now.getDay() === 6 ||
         now.getDay() === 0 ||
         (now.getDay() === 5 && now.getHours() >= 20);
-      let isHoursBetween10and20 = now.getHours() >= 10 || now.getHours() <= 20;
-      let isHoursBetween10and13 = now.getHours() >= 10 || now.getHours() <= 13;
-      let isHoursBetween13and16 = now.getHours() >= 13 || now.getHours() <= 16;
+      let isHoursBetween10and20 = now.getHours() >= 10 && now.getHours() < 20;
+      let isHoursBetween10and13 = now.getHours() >= 10 && now.getHours() < 13;
+      let isHoursBetween13and16 = now.getHours() >= 13 && now.getHours() < 16;
       if (isWeekend) {
         if (
           this.json.weekend[this.ageCalculated][this.workStatus].outside ===
@@ -152,6 +152,7 @@ export default {
               "10-13" &&
             isHoursBetween10and13
           ) {
+            console.log("10-13 evet");
             this.$router.push("evet");
             return false;
           }
@@ -173,7 +174,7 @@ export default {
   },
   watch: {
     age() {
-      this.ageCalculated = this.age;
+      this.ageCalculated = "other";
       if (this.age >= 65) {
         this.ageCalculated = 65;
       }
