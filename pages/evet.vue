@@ -2,7 +2,7 @@
   <Container class="disari-container">
     <Row class="disari-row">
       <Column lg="6" md="6" sm="4" class="text-center">
-        <h5 style="margin-bottom: 20px;">#SevdiklerimiKorumakİciBen</h5>
+        <h5 style="margin-bottom: 20px;">#SevdiklerimiKorumakİcinBen</h5>
         <h1>🏃‍♀️🏃‍♂️🏃‍♀️🏃‍♂️🏃‍♀️🏃‍♂️🏃‍♀️🏃‍♂️</h1>
         <h1>Hurrraahhh!</h1>
         <h1 class="reversed-text">🏃‍♀️🏃‍♂️🏃‍♀️🏃‍♂️🏃‍♀️🏃‍♂️🏃‍♀️🏃‍♂️</h1>
