@@ -37,7 +37,7 @@
           /></a>
         </div>
         <div style=" margin-bottom: 10px; text-align: center;">
-          <span style="text-align: center;">
+          <span style="text-align: center; margin-bottom: 25px;">
             Dünyanın bir numaralı dezenfektanı
           </span>
         </div>
