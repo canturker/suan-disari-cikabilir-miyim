@@ -10,14 +10,22 @@ export default {
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { hid: "description", name: "description", content: "" }
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.png" }]
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.png" }],
+    script: [
+      {
+        src: "https://www.googletagmanager.com/gtag/js?id=G-56N2JQJ2P3"
+      }
+    ]
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: ["kunodo/dist/kunodo.css"],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: [{ src: "~plugins/ga.js", mode: "client" }],
+  plugins: [
+    { src: "~plugins/ga.js", mode: "client" },
+    { src: "~plugins/ga2.js", mode: "client" }
+  ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
