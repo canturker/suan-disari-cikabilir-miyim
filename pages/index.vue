@@ -24,11 +24,18 @@
         <div class="disari-submit">
           <Button type="primary" @click="formClick">Kontrol Et</Button>
         </div>
-      </Column>
-      <div class="credits">
-        <a href="https://ty.gl/lysol_website_112020" style="text-align: center">
-          <img class="banner-image" src="../assets/lysol.svg" alt=""
-        /></a>
+        <div style="text-align:center;margin-top: 50px;">
+          <a
+            href="https://ty.gl/lysol_website_112020"
+            style="text-align: center; margin: 0 auto"
+          >
+            <img
+              class="banner-image"
+              style="margin-bottom: 10px;"
+              src="../assets/lysol.svg"
+              alt=""
+          /></a>
+        </div>
         <h5 style="text-align: center; margin-bottom: 5px;">
           <a href="https://www.linkedin.com/in/canturker/" target="_black"
             >ACT</a
@@ -47,7 +54,8 @@
             destekte bulunulmuştur.
           </a>
         </h5>
-      </div>
+      </Column>
+      <div class="credits"></div>
     </Row>
   </Container>
 </template>
