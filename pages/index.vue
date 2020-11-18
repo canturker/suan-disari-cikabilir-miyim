@@ -36,6 +36,11 @@
               alt=""
           /></a>
         </div>
+        <div style=" margin-bottom: 10px; text-align: center;">
+          <span style="text-align: center;">
+            Dünyanın bir numaralı dezenfektanı
+          </span>
+        </div>
         <h5 style="text-align: center; margin-bottom: 5px;">
           <a href="https://www.linkedin.com/in/canturker/" target="_black"
             >ACT</a
@@ -50,8 +55,7 @@
         </h5>
         <h5 style="margin-bottom: 10px;text-align: center;">
           <a href="https://cdn.adverport.com/lysol-dekont.jpeg" target="_blank">
-            Dünyanın bir numaralı dezenfektanı Lysol ortaklığı ile TEGV'e
-            destekte bulunulmuştur.
+            Lysol ortaklığı ile TEGV'e destekte bulunulmuştur.
           </a>
         </h5>
       </Column>
