@@ -55,7 +55,7 @@
         </h5>
         <h5 style="margin-bottom: 10px;text-align: center;">
           <a
-            href="https://cdn.adverport.com/lysol-dekont-1.jpeg"
+            href="https://cdn.adverport.com/lysol-dekont-2.jpeg"
             target="_blank"
           >
             Lysol ortaklığı ile TEGV'e destekte bulunulmuştur.

@@ -7,7 +7,7 @@
         <h1>Malesef şu an dışarı çıkamazsın</h1>
         <h1 class="reversed-text">🥺🥺🥺🥺🥺🥺🥺🥺</h1>
         <h5>
-          Evde lysol bulundurmayı unutma!
+          Evde Lysol bulundurmayı unutma!
         </h5>
         <h5 style="display: flex; justify-content: center; margin-top: 10px;">
           <a href="https://ty.gl/lysol_website_112020"
@@ -35,7 +35,7 @@
         </h5>
         <h5 style="margin-bottom: 10px;text-align: center;">
           <a
-            href="https://cdn.adverport.com/lysol-dekont-1.jpeg"
+            href="https://cdn.adverport.com/lysol-dekont-2.jpeg"
             target="_blank"
           >
             Dünyanın bir numaralı dezenfektanı Lysol ortaklığı ile TEGV'e
