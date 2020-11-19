@@ -34,7 +34,10 @@
           tarafından 😂😂😂😂 eşliğinde yapılmıştır
         </h5>
         <h5 style="margin-bottom: 10px;text-align: center;">
-          <a href="https://cdn.adverport.com/lysol-dekont.jpeg" target="_blank">
+          <a
+            href="https://cdn.adverport.com/lysol-dekont-1.jpeg"
+            target="_blank"
+          >
             Dünyanın bir numaralı dezenfektanı Lysol ortaklığı ile TEGV'e
             destekte bulunulmuştur.
           </a>
