@@ -145,7 +145,12 @@ export default {
         this.$router.push("covid");
       } else {
         if (isWeekend) {
-          if (now.getDay() === 6 && now.getHours() < 20) {
+          if (
+            now.getDay() === 6 &&
+            now.getHours() < 20 &&
+            this.age < 65 &&
+            this.age > 20
+          ) {
             this.$router.push("evet");
             return false;
           }
