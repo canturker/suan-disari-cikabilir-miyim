@@ -148,8 +148,8 @@ export default {
           if (
             now.getDay() === 6 &&
             now.getHours() < 20 &&
-            this.age < 65 &&
-            this.age > 20
+            parseInt(this.age) < 65 &&
+            parseInt(this.age) > 20
           ) {
             this.$router.push("evet");
             return false;
