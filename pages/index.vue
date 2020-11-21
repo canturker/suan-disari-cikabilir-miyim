@@ -133,10 +133,10 @@ export default {
   methods: {
     formClick() {
       const now = new Date();
-      // woopra.identify({
-      //   age: this.age,
-      //   workStatus: this.workStatus === 1 ? "Evet" : "Hayır"
-      // });
+      woopra.identify({
+        age: this.age,
+        workStatus: this.workStatus === 1 ? "Evet" : "Hayır"
+      });
       let isWeekend = now.getDay() === 6 || now.getDay() === 0;
       let isHoursBetween10and20 = now.getHours() >= 10 && now.getHours() < 20;
       let isHoursBetween10and13 = now.getHours() >= 10 && now.getHours() < 13;
