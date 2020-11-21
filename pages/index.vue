@@ -133,14 +133,11 @@ export default {
   methods: {
     formClick() {
       const now = new Date();
-      woopra.identify({
-        age: this.age,
-        workStatus: this.workStatus === 1 ? "Evet" : "Hayır"
-      });
-      let isWeekend =
-        now.getDay() === 6 ||
-        now.getDay() === 0 ||
-        (now.getDay() === 5 && now.getHours() >= 20);
+      // woopra.identify({
+      //   age: this.age,
+      //   workStatus: this.workStatus === 1 ? "Evet" : "Hayır"
+      // });
+      let isWeekend = now.getDay() === 6 || now.getDay() === 0;
       let isHoursBetween10and20 = now.getHours() >= 10 && now.getHours() < 20;
       let isHoursBetween10and13 = now.getHours() >= 10 && now.getHours() < 13;
       let isHoursBetween13and16 = now.getHours() >= 13 && now.getHours() < 16;
@@ -148,6 +145,10 @@ export default {
         this.$router.push("covid");
       } else {
         if (isWeekend) {
+          if (now.getDay() === 6 && now.getHours() < 20) {
+            this.$router.push("evet");
+            return false;
+          }
           if (
             this.json.weekend[this.ageCalculated][this.workStatus].outside ===
               "10-20" &&
