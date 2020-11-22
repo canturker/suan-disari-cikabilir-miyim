@@ -180,6 +180,10 @@ export default {
           }
           this.$router.push("hayir");
         } else {
+          if (now.getDay() === 1 && now.getHours() < 5) {
+            this.$router.push("hayir");
+            return false;
+          }
           if (
             this.json.weekday[this.ageCalculated][this.workStatus].outside ===
             "yes"
