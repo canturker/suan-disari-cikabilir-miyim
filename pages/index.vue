@@ -145,78 +145,40 @@ export default {
         this.$router.push("covid");
       } else {
         if (isWeekend) {
-          if (
-            now.getDay() === 6 &&
-            now.getHours() < 20 &&
-            parseInt(this.age) < 65 &&
-            parseInt(this.age) > 20
-          ) {
-            this.$router.push("evet");
-            return false;
-          }
-          if (
-            this.json.weekend[this.ageCalculated][this.workStatus].outside ===
-              "10-20" &&
-            isHoursBetween10and20
-          ) {
-            this.$router.push("evet");
-            return false;
-          }
-          if (
-            this.json.weekend[this.ageCalculated][this.workStatus].outside ===
-              "10-13" &&
-            isHoursBetween10and13
-          ) {
-            this.$router.push("evet");
-            return false;
-          }
-          if (
-            this.json.weekend[this.ageCalculated][this.workStatus].outside ===
-              "13-16" &&
-            isHoursBetween13and16
-          ) {
-            this.$router.push("evet");
-            return false;
-          }
           this.$router.push("hayir");
+          return false;
         } else {
-          if (now.getDay() === 1 && now.getHours() < 5) {
+          if (now.getHours() > 20 || now.getHours() < 5) {
             this.$router.push("hayir");
-            return false;
-          }
-          if (
-            this.json.weekday[this.ageCalculated][this.workStatus].outside ===
-            "yes"
-          ) {
-            this.$router.push("evet");
             return false;
           } else {
-            if (
-              this.json.weekday[this.ageCalculated][this.workStatus].outside ===
-                "10-20" &&
-              isHoursBetween10and20
+            if (this.ageCalculated === "other") {
+              this.$router.push("evet");
+              return false;
+            } else if (
+              this.ageCalculated === 65 &&
+              isHoursBetween10and13 &&
+              this.workStatus === 2
             ) {
               this.$router.push("evet");
               return false;
-            }
-            if (
-              this.json.weekday[this.ageCalculated][this.workStatus].outside ===
-                "10-13" &&
-              isHoursBetween10and13
-            ) {
-              console.log("10-13 evet");
+            } else if (this.ageCalculated === 65 && this.workStatus === 1) {
               this.$router.push("evet");
               return false;
-            }
-            if (
-              this.json.weekday[this.ageCalculated][this.workStatus].outside ===
-                "13-16" &&
-              isHoursBetween13and16
+            } else if (
+              this.ageCalculated === 20 &&
+              isHoursBetween13and16 &&
+              this.workStatus === 2
             ) {
               this.$router.push("evet");
               return false;
+            } else if (this.ageCalculated === 20 && this.workStatus === 1) {
+              this.$router.push("evet");
+              return false;
+            } else {
+              this.$router.push("hayir");
+              return false;
             }
-            this.$router.push("hayir");
           }
         }
       }
