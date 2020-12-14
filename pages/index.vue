@@ -24,24 +24,7 @@
         <div class="disari-submit">
           <Button type="primary" @click="formClick">Kontrol Et</Button>
         </div>
-        <div style="text-align:center;margin-top: 50px;">
-          <a
-            href="https://ty.gl/lysol_website_112020"
-            style="text-align: center; margin: 0 auto"
-          >
-            <img
-              class="banner-image"
-              style="margin-bottom: 10px;"
-              src="../assets/lysol.svg"
-              alt=""
-          /></a>
-        </div>
-        <div style=" margin-bottom: 10px; text-align: center;">
-          <span style="text-align: center; margin-bottom: 25px;">
-            Dünyanın bir numaralı dezenfektanı
-          </span>
-        </div>
-        <h5 style="text-align: center; margin-bottom: 5px;">
+        <h5 style="text-align: center; margin-bottom: 5px; margin-top: 70px;">
           <a href="https://www.linkedin.com/in/canturker/" target="_black"
             >ACT</a
           >
