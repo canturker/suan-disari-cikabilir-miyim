@@ -7,6 +7,11 @@
         <h1>Covid yıkamaz seni!</h1>
         <h1 class="reversed-text">💣💣💣💣💣💣💣</h1>
         <h3></h3>
+        <h5 style="margin-bottom: 10px;text-align: center;">
+          <a href="https://www.buyilapuanim.com" target="_blank">
+            2020'ye kaç puan verirsin?
+          </a>
+        </h5>
       </Column>
       <div class="credits">
         <h5>
