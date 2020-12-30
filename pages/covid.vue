@@ -7,9 +7,10 @@
         <h1>Covid yıkamaz seni!</h1>
         <h1 class="reversed-text">💣💣💣💣💣💣💣</h1>
         <h3></h3>
-        <h5 style="margin-bottom: 10px;text-align: center;">
+        <h5 style="margin-top: 20px; margin-bottom: 20px; text-align: center;">
           <a href="https://www.buyilapuanim.com" target="_blank">
-            2020'ye kaç puan verirsin?
+            Covid seni yıkamadığına göre 2020 💣 gibi geçiyor olmalı. Hadi tıkla
+            gel 2020'ye puan ver!
           </a>
         </h5>
       </Column>

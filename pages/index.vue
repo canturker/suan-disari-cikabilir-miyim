@@ -24,6 +24,14 @@
         <div class="disari-submit">
           <Button type="primary" @click="formClick">Kontrol Et</Button>
         </div>
+
+        <h5 style="margin-top: 20px; margin-bottom: 20px; text-align: center;">
+          <a href="https://www.buyilapuanim.com" target="_blank">
+            Sana dışarı çıkabilir misin söylerim ama önce tıkla gel 2020'ye puan
+            ver bence?
+          </a>
+          😉
+        </h5>
         <h5 style="text-align: center; margin-bottom: 5px; margin-top: 70px;">
           <a href="https://www.linkedin.com/in/canturker/" target="_black"
             >ACT</a
@@ -35,11 +43,6 @@
             >OK</a
           >
           tarafından 😂😂😂😂 eşliğinde yapılmıştır
-        </h5>
-        <h5 style="margin-bottom: 10px;text-align: center;">
-          <a href="https://www.buyilapuanim.com" target="_blank">
-            2020'ye kaç puan verirsin?
-          </a>
         </h5>
         <h5 style="margin-bottom: 10px;text-align: center;">
           <a href="https://cdn.adverport.com/sertifika.png" target="_blank">
