@@ -8,7 +8,10 @@
         <h1 class="reversed-text">💣💣💣💣💣💣💣</h1>
         <h3></h3>
         <h5 style="margin-top: 20px; margin-bottom: 20px; text-align: center;">
-          <a href="https://www.buyilapuanim.com" target="_blank">
+          <a
+            href="https://www.buyilapuanim.com/?utm_source=suandisaricikabilirmiyim&utm_medium=covid&utm_campaign=promote"
+            target="_blank"
+          >
             Covid seni yıkamadığına göre 2020 💣 gibi geçiyor olmalı. Hadi tıkla
             gel 2020'ye puan ver!
           </a>
