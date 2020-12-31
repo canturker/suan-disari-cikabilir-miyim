@@ -2,7 +2,14 @@
   <Container class="disari-container">
     <Row class="disari-row">
       <Column lg="6" md="6" sm="4">
-        <h1>Şu an dışarı çıkabilir miyim? 🤔</h1>
+        <h1>
+          Şu an dışarı çıkabilir miyim?
+          <img
+            class="disari-santa"
+            src="../assets/t-f-santa.png"
+            alt="2021 YEEEYYY"
+          />
+        </h1>
         <div class="disari-form">
           <Input
             type="number"
@@ -26,7 +33,10 @@
         </div>
 
         <h5 style="margin-top: 20px; margin-bottom: 20px; text-align: center;">
-          <a href="https://www.buyilapuanim.com/?utm_source=suandisaricikabilirmiyim&utm_medium=index&utm_campaign=promote" target="_blank">
+          <a
+            href="https://www.buyilapuanim.com/?utm_source=suandisaricikabilirmiyim&utm_medium=index&utm_campaign=promote"
+            target="_blank"
+          >
             Sana dışarı çıkabilir misin söylerim ama önce tıkla gel 2020'ye puan
             ver bence?
           </a>
@@ -124,51 +134,59 @@ export default {
   methods: {
     formClick() {
       const now = new Date();
-      woopra.identify({
-        age: this.age,
-        workStatus: this.workStatus === 1 ? "Evet" : "Hayır"
-      });
+      // woopra.identify({
+      //   age: this.age,
+      //   workStatus: this.workStatus === 1 ? "Evet" : "Hayır"
+      // });
       let isWeekend = now.getDay() === 6 || now.getDay() === 0;
       let isHoursBetween10and20 = now.getHours() >= 10 && now.getHours() < 20;
       let isHoursBetween10and13 = now.getHours() >= 10 && now.getHours() < 13;
       let isHoursBetween13and16 = now.getHours() >= 13 && now.getHours() < 16;
+      let unix = Math.floor(now.getTime() / 1000);
+      let newYearBlock = unix >= 1609437600 && unix <= 1609725600;
       if (parseInt(this.age) >= 100) {
         this.$router.push("covid");
       } else {
-        if (isWeekend) {
+        if (newYearBlock) {
+          console.log("NEW YEAR BLOCK");
           this.$router.push("hayir");
           return false;
         } else {
-          if (now.getHours() > 20 || now.getHours() < 5) {
+          if (isWeekend) {
             this.$router.push("hayir");
             return false;
           } else {
-            if (this.ageCalculated === "other") {
-              this.$router.push("evet");
-              return false;
-            } else if (
-              this.ageCalculated === 65 &&
-              isHoursBetween10and13 &&
-              this.workStatus === 2
-            ) {
-              this.$router.push("evet");
-              return false;
-            } else if (this.ageCalculated === 65 && this.workStatus === 1) {
-              this.$router.push("evet");
-              return false;
-            } else if (
-              this.ageCalculated === 20 &&
-              isHoursBetween13and16 &&
-              this.workStatus === 2
-            ) {
-              this.$router.push("evet");
-              return false;
-            } else if (this.ageCalculated === 20 && this.workStatus === 1) {
-              this.$router.push("evet");
-              return false;
-            } else {
+            if (now.getHours() > 20 || now.getHours() < 5) {
               this.$router.push("hayir");
               return false;
+            } else {
+              if (this.ageCalculated === "other") {
+                this.$router.push("evet");
+                return false;
+              } else if (
+                this.ageCalculated === 65 &&
+                isHoursBetween10and13 &&
+                this.workStatus === 2
+              ) {
+                this.$router.push("evet");
+                return false;
+              } else if (this.ageCalculated === 65 && this.workStatus === 1) {
+                this.$router.push("evet");
+                return false;
+              } else if (
+                this.ageCalculated === 20 &&
+                isHoursBetween13and16 &&
+                this.workStatus === 2
+              ) {
+                this.$router.push("evet");
+                return false;
+              } else if (this.ageCalculated === 20 && this.workStatus === 1) {
+                this.$router.push("evet");
+                return false;
+              } else {
+                this.$router.push("hayir");
+                return false;
+              }
             }
           }
         }
@@ -237,5 +255,8 @@ h1 {
   height: 35px;
   text-align: center;
   margin-right: 10px;
+}
+.disari-santa {
+  width: 60px;
 }
 </style>
