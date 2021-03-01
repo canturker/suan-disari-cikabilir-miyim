@@ -13,11 +13,6 @@ export default {
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.png" }],
     script: [
       {
-        src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
-        async: true,
-        "data-ad-client": "ca-pub-3299798466473939"
-      },
-      {
         src: "https://www.googletagmanager.com/gtag/js?id=G-56N2JQJ2P3"
       }
     ]
