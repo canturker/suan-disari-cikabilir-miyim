@@ -6,7 +6,7 @@
         md="6"
         sm="4"
         class="text-center"
-        style="padding: 100px 0;"
+        style="padding-top: 100px; padding-bottom: 100px;"
       >
         <h1>🏃‍♀️🏃‍♂️🏃‍♀️🏃‍♂️🏃‍♀️🏃‍♂️🏃‍♀️🏃‍♂️</h1>
         <h1>Hurrraahhh!</h1>
