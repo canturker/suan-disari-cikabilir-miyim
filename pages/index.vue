@@ -881,7 +881,8 @@ export default {
         },
         {
           id: "77",
-          name: "YALOVA"
+          name: "YALOVA",
+          risk: 2
         },
         {
           id: "78",
@@ -923,17 +924,17 @@ export default {
       }
       let isSunday = now.getDay() === 0;
       let isHoursBetween21and5 = now.getHours() >= 21 || now.getHours() < 5;
+      let selectedCityRiskLevel = this.cityRiskList.find(item => {
+        return item.id === this.selectedCity;
+      }).risk;
       if (isHoursBetween21and5) {
-        this.$router.push("hayir");
+        this.$router.push(`hayir/${selectedCityRiskLevel}`);
         return;
       }
-      let selectedCityRiskLevel = this.cityRiskList.find(item => {
-        return item.value === this.selectedCity;
-      }).risk;
       let route = this.JSON[selectedCityRiskLevel].age[this.ageCalculated].day[
         isSunday ? "sunday" : "funday"
       ];
-      this.$router.push(route);
+      this.$router.push(`${route}/${selectedCityRiskLevel}`);
     },
     buttonGroupClick(e) {
       this.workStatus = e;
