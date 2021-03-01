@@ -37,5 +37,20 @@ export default {
   modules: [],
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
-  build: {}
+  build: {},
+  generate: {
+    crawler: false,
+    fallback: "404.html",
+    routes: [
+      "/",
+      "/evet/1",
+      "/evet/2",
+      "/evet/3",
+      "/evet/4",
+      "/hayir/1",
+      "/hayir/2",
+      "/hayir/3",
+      "/hayir/4"
+    ]
+  }
 };
