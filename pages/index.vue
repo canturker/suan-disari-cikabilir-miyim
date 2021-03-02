@@ -8,6 +8,7 @@
         <div class="disari-form">
           <Combobox
             :items="city"
+            locale="tr-TR"
             v-model="selectedCity"
             :error="cityError"
             :message="cityErrorMessage"
@@ -952,7 +953,7 @@ export default {
         this.ageCalculated = 20;
       }
     },
-    selectedCity() {
+    selectedCity(val) {
       this.cityError = false;
       this.cityErrorMessage = "";
     }
