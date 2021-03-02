@@ -171,6 +171,18 @@ export default {
           value: 0
         },
         {
+          name: "İSTANBUL",
+          value: "34"
+        },
+        {
+          name: "İZMİR",
+          value: "35"
+        },
+        {
+          name: "ANKARA",
+          value: "6"
+        },
+        {
           name: "ADANA",
           value: "1"
         },
@@ -189,10 +201,6 @@ export default {
         {
           name: "AMASYA",
           value: "5"
-        },
-        {
-          name: "ANKARA",
-          value: "6"
         },
         {
           name: "ANTALYA",
@@ -302,14 +310,7 @@ export default {
           name: "MERSİN",
           value: "33"
         },
-        {
-          name: "İSTANBUL",
-          value: "34"
-        },
-        {
-          name: "İZMİR",
-          value: "35"
-        },
+
         {
           name: "KARS",
           value: "36"
