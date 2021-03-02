@@ -8,9 +8,25 @@
         class="text-center"
         style="padding-top: 100px; padding-bottom: 100px;"
       >
+        <h5 style="margin-bottom: 20px;">#SevdiklerimiKorumakİcinBen</h5>
         <h1>🥺🥺🥺🥺🥺🥺🥺🥺</h1>
         <h1>Malesef şu an dışarı çıkamazsın</h1>
         <h1 class="reversed-text">🥺🥺🥺🥺🥺🥺🥺🥺</h1>
+        <h5>
+          Maske . Mesafe . Lysol
+        </h5>
+        <h5 style="display: flex; justify-content: center; margin-top: 10px;">
+          <a href="https://ty.gl/lysol_website_112020"
+            ><img src="../../assets/lysol.svg" class="banner-image-1" alt=""
+          /></a>
+          yoksa
+          <a
+            href="https://ty.gl/lysol_website_112020"
+            style="margin-left: 5px;"
+          >
+            hemen al</a
+          >
+        </h5>
         <div>
           <Table>
             <tbody>
