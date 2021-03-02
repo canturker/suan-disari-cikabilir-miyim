@@ -13,7 +13,7 @@
         <h1>Hurrraahhh!</h1>
         <h1 class="reversed-text">🏃‍♀️🏃‍♂️🏃‍♀️🏃‍♂️🏃‍♀️🏃‍♂️🏃‍♀️🏃‍♂️</h1>
         <h5>
-          Maske . Mesafe . Lysol
+          Tedbirli ol, Güvende ol, Lysol!
         </h5>
         <h5 style="display: flex; justify-content: center; margin-top: 10px;">
           <a href="https://ty.gl/lysol_website_112020"
