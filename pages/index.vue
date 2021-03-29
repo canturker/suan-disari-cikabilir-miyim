@@ -514,14 +514,9 @@ export default {
       ],
       cityRiskList: [
         {
-          id: 0,
-          name: "-",
-          disabled: true
-        },
-        {
           id: "1",
           name: "ADANA",
-          risk: 2
+          risk: 3
         },
         {
           id: "2",
@@ -531,12 +526,17 @@ export default {
         {
           id: "3",
           name: "AFYONKARAHİSAR",
-          risk: 2
+          risk: 3
         },
         {
           id: "4",
           name: "AĞRI",
-          risk: 1
+          risk: 3
+        },
+        {
+          id: "68",
+          name: "AKSARAY",
+          risk: 4
         },
         {
           id: "5",
@@ -546,22 +546,27 @@ export default {
         {
           id: "6",
           name: "ANKARA",
-          risk: 2
+          risk: 4
         },
         {
           id: "7",
           name: "ANTALYA",
-          risk: 3
+          risk: 4
+        },
+        {
+          id: "75",
+          name: "ARDAHAN",
+          risk: 4
         },
         {
           id: "8",
           name: "ARTVİN",
-          risk: 3
+          risk: 4
         },
         {
           id: "9",
           name: "AYDIN",
-          risk: 2
+          risk: 4
         },
         {
           id: "10",
@@ -569,59 +574,79 @@ export default {
           risk: 4
         },
         {
+          id: "74",
+          name: "BARTIN",
+          risk: 4
+        },
+        {
+          id: "72",
+          name: "BATMAN",
+          risk: 2
+        },
+        {
+          id: "69",
+          name: "BAYBURT",
+          risk: 4
+        },
+        {
           id: "11",
           name: "BİLECİK",
-          risk: 3
+          risk: 4
         },
         {
           id: "12",
           name: "BİNGÖL",
-          risk: 1
+          risk: 3
         },
         {
           id: "13",
           name: "BİTLİS",
-          risk: 1
+          risk: 2
         },
         {
           id: "14",
           name: "BOLU",
-          risk: 3
+          risk: 4
         },
         {
           id: "15",
           name: "BURDUR",
-          risk: 4
+          risk: 3
         },
         {
           id: "16",
           name: "BURSA",
-          risk: 2
+          risk: 4
         },
         {
           id: "17",
           name: "ÇANAKKALE",
-          risk: 3
+          risk: 4
         },
         {
           id: "18",
           name: "ÇANKIRI",
-          risk: 2
+          risk: 4
         },
         {
           id: "19",
           name: "ÇORUM",
-          risk: 2
+          risk: 4
         },
         {
           id: "20",
           name: "DENİZLİ",
-          risk: 2
+          risk: 3
         },
         {
           id: "21",
           name: "DİYARBAKIR",
-          risk: 1
+          risk: 2
+        },
+        {
+          id: "81",
+          name: "DÜZCE",
+          risk: 4
         },
         {
           id: "22",
@@ -631,27 +656,27 @@ export default {
         {
           id: "23",
           name: "ELAZIĞ",
-          risk: 2
+          risk: 4
         },
         {
           id: "24",
           name: "ERZİNCAN",
-          risk: 2
+          risk: 4
         },
         {
           id: "25",
           name: "ERZURUM",
-          risk: 2
+          risk: 4
         },
         {
           id: "26",
           name: "ESKİŞEHİR",
-          risk: 2
+          risk: 4
         },
         {
           id: "27",
           name: "GAZİANTEP",
-          risk: 2
+          risk: 4
         },
         {
           id: "28",
@@ -666,61 +691,87 @@ export default {
         {
           id: "30",
           name: "HAKKARİ",
-          risk: 1
+          risk: 2
         },
         {
           id: "31",
           name: "HATAY",
-          risk: 2
+          risk: 3
+        },
+        {
+          id: "76",
+          name: "IĞDIR",
+          risk: 4
         },
         {
           id: "32",
           name: "ISPARTA",
-          risk: 2
-        },
-        {
-          id: "33",
-          name: "MERSİN",
-          risk: 3
+          risk: 4
         },
         {
           id: "34",
           name: "İSTANBUL",
-          risk: 3
+          risk: 4
         },
         {
           id: "35",
           name: "İZMİR",
+          risk: 4
+        },
+        {
+          id: "46",
+          name: "KAHRAMANMARAŞ",
           risk: 3
+        },
+        {
+          id: "78",
+          name: "KARABÜK",
+          risk: 4
+        },
+        {
+          id: "70",
+          name: "KARAMAN",
+          risk: 4
         },
         {
           id: "36",
           name: "KARS",
-          risk: 2
+          risk: 3
         },
         {
           id: "37",
           name: "KASTAMONU",
-          risk: 2
+          risk: 4
         },
         {
           id: "38",
           name: "KAYSERİ",
-          risk: 3
+          risk: 4
+        },
+        {
+          id: "71",
+          name: "KIRIKKALE",
+          risk: 4
         },
         {
           id: "39",
           name: "KIRKLARELİ",
-          risk: 3
+          risk: 4
         },
         {
           id: "40",
           name: "KIRŞEHİR",
-          risk: 2
+          risk: 3
+        },
+        {
+          id: "79",
+          name: "KİLİS",
+          risk: 4
         },
         {
           id: "41",
-          name: "KOCAELİ"
+          name: "KOCAELİ",
+          risk: 4
         },
         {
           id: "42",
@@ -730,51 +781,56 @@ export default {
         {
           id: "43",
           name: "KÜTAHYA",
-          risk: 3
+          risk: 4
         },
         {
           id: "44",
           name: "MALATYA",
-          risk: 2
+          risk: 4
         },
         {
           id: "45",
           name: "MANİSA",
-          risk: 2
-        },
-        {
-          id: "46",
-          name: "KAHRAMANMARAŞ",
-          risk: 2
+          risk: 3
         },
         {
           id: "47",
           name: "MARDİN",
-          risk: 1
+          risk: 2
+        },
+        {
+          id: "33",
+          name: "MERSİN",
+          risk: 4
         },
         {
           id: "48",
           name: "MUĞLA",
-          risk: 3
+          risk: 4
         },
         {
           id: "49",
           name: "MUŞ",
-          risk: 1
+          risk: 2
         },
         {
           id: "50",
           name: "NEVŞEHİR",
-          risk: 2
+          risk: 4
         },
         {
           id: "51",
           name: "NİĞDE",
-          risk: 3
+          risk: 4
         },
         {
           id: "52",
           name: "ORDU",
+          risk: 4
+        },
+        {
+          id: "80",
+          name: "OSMANİYE",
           risk: 4
         },
         {
@@ -795,7 +851,7 @@ export default {
         {
           id: "56",
           name: "SİİRT",
-          risk: 1
+          risk: 2
         },
         {
           id: "57",
@@ -805,12 +861,22 @@ export default {
         {
           id: "58",
           name: "SİVAS",
+          risk: 4
+        },
+        {
+          id: "63",
+          name: "ŞANLIURFA",
           risk: 2
+        },
+        {
+          id: "73",
+          name: "ŞIRNAK",
+          risk: 1
         },
         {
           id: "59",
           name: "TEKİRDAĞ",
-          risk: 3
+          risk: 4
         },
         {
           id: "60",
@@ -825,102 +891,32 @@ export default {
         {
           id: "62",
           name: "TUNCELİ",
-          risk: 2
-        },
-        {
-          id: "63",
-          name: "ŞANLIURFA",
-          risk: 1
+          risk: 3
         },
         {
           id: "64",
           name: "UŞAK",
-          risk: 1
+          risk: 2
         },
         {
           id: "65",
           name: "VAN",
-          risk: 1
-        },
-        {
-          id: "66",
-          name: "YOZGAT",
           risk: 2
-        },
-        {
-          id: "67",
-          name: "ZONGULDAK",
-          risk: 3
-        },
-        {
-          id: "68",
-          name: "AKSARAY",
-          risk: 4
-        },
-        {
-          id: "69",
-          name: "BAYBURT",
-          risk: 2
-        },
-        {
-          id: "70",
-          name: "KARAMAN",
-          risk: 3
-        },
-        {
-          id: "71",
-          name: "KIRIKKALE",
-          risk: 3
-        },
-        {
-          id: "72",
-          name: "BATMAN",
-          risk: 1
-        },
-        {
-          id: "73",
-          name: "ŞIRNAK",
-          risk: 1
-        },
-        {
-          id: "74",
-          name: "BARTIN",
-          risk: 2
-        },
-        {
-          id: "75",
-          name: "ARDAHAN",
-          risk: 3
-        },
-        {
-          id: "76",
-          name: "IĞDIR",
-          risk: 1
         },
         {
           id: "77",
           name: "YALOVA",
-          risk: 2
-        },
-        {
-          id: "78",
-          name: "KARABÜK",
-          risk: 2
-        },
-        {
-          id: "79",
-          name: "KİLİS",
-          risk: 3
-        },
-        {
-          id: "80",
-          name: "OSMANİYE",
           risk: 4
         },
         {
-          id: "81",
-          name: "DÜZCE",
-          risk: 3
+          id: "66",
+          name: "YOZGAT",
+          risk: 4
+        },
+        {
+          id: "67",
+          name: "ZONGULDAK",
+          risk: 4
         }
       ]
     };
