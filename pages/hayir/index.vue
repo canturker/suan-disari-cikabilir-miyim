@@ -9,9 +9,9 @@
         style="padding-top: 100px; padding-bottom: 100px;"
       >
         <h5 style="margin-bottom: 20px;">#SevdiklerimiKorumakİcinBen</h5>
-        <h1>🏃‍♀️🏃‍♂️🏃‍♀️🏃‍♂️🏃‍♀️🏃‍♂️🏃‍♀️🏃‍♂️</h1>
-        <h1>Hurrraahhh!</h1>
-        <h1 class="reversed-text">🏃‍♀️🏃‍♂️🏃‍♀️🏃‍♂️🏃‍♀️🏃‍♂️🏃‍♀️🏃‍♂️</h1>
+        <h1>🥺🥺🥺🥺🥺🥺🥺🥺</h1>
+        <h1>Malesef şu an dışarı çıkamazsın</h1>
+        <h1 class="reversed-text">🥺🥺🥺🥺🥺🥺🥺🥺</h1>
         <h5>
           Tedbirli ol, Güvende ol, Lysol!
         </h5>
@@ -42,6 +42,7 @@
             </tbody>
           </Table>
         </div> -->
+
         <h5 style="text-align: center; margin-bottom: 5px; margin-top: 70px;">
           <a href="https://www.linkedin.com/in/canturker/" target="_black"
             >ACT</a
@@ -54,7 +55,8 @@
           >
           tarafından 😂😂😂😂 eşliğinde yapılmıştır
         </h5>
-        <h5 style="margin-top: 10px;text-align: center;">
+
+        <h5 style="margin-bottom: 10px;text-align: center;">
           <a href="https://cdn.adverport.com/sertifika.png" target="_blank">
             Lysol ortaklığı ile TEGV'e destekte bulunulmuştur.
           </a>
@@ -72,11 +74,11 @@ import {
   Row,
   Column,
   Input,
-  Table,
-  ButtonGroup
+  ButtonGroup,
+  Table
 } from "kunodo";
 export default {
-  components: { Button, Container, Row, Column, Input, Table, ButtonGroup },
+  components: { Button, Container, Row, Column, Input, ButtonGroup, Table },
   data() {
     return {
       features: {
@@ -260,7 +262,10 @@ h1 {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
-
+.credits {
+  position: absolute;
+  bottom: 0;
+}
 .credits {
   position: absolute;
   bottom: 0;

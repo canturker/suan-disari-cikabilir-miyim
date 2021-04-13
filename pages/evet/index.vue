@@ -27,7 +27,7 @@
             hemen al</a
           >
         </h5>
-        <!-- <div>
+        <div>
           <Table>
             <tbody>
               <tr
@@ -41,7 +41,7 @@
               </tr>
             </tbody>
           </Table>
-        </div> -->
+        </div>
         <h5 style="text-align: center; margin-bottom: 5px; margin-top: 70px;">
           <a href="https://www.linkedin.com/in/canturker/" target="_black"
             >ACT</a
