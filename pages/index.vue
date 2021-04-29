@@ -9,12 +9,12 @@
         style="padding-top: 100px; padding-bottom: 100px;"
       >
         <h5 style="margin-bottom: 20px;">#SevdiklerimiKorumakİcinBen</h5>
-        <h1 style="margin-bottom:10px;">Dışarı çıkabilmene</h1>
+        <h2 style="margin-bottom:10px;">Dışarı çıkabilmene</h2>
         <h1
           style="margin-bottom:10px; font-weight: 500;"
           v-text="timeleftText"
         ></h1>
-        <h1 style="margin-bottom: 50px;">kaldı 🥺</h1>
+        <h2 style="margin-bottom: 50px;">kaldı 🥺</h2>
         <h5>
           Tedbirli ol, Güvende ol, Lysol!
         </h5>
