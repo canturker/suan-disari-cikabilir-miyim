@@ -93,19 +93,20 @@ export default {
           "Önemli olan ruhumuzun genç olması çekinmeyin 😇";
         return;
       }
-      let isSaturday = now.getDay() === 6;
-      let isSunday = now.getDay() === 0;
-      let isHoursBetween19and5 = now.getHours() >= 19 || now.getHours() < 5;
-      if (
-        isSaturday ||
-        isSunday ||
-        isHoursBetween19and5 ||
-        this.ageCalculated === 65
-      ) {
-        this.$router.push(`hayir`);
-      } else {
-        this.$router.push(`evet`);
-      }
+      this.$router.push(`hayir`);
+      // let isSaturday = now.getDay() === 6;
+      // let isSunday = now.getDay() === 0;
+      // let isHoursBetween19and5 = now.getHours() >= 19 || now.getHours() < 5;
+      // if (
+      //   isSaturday ||
+      //   isSunday ||
+      //   isHoursBetween19and5 ||
+      //   this.ageCalculated === 65
+      // ) {
+      //   this.$router.push(`hayir`);
+      // } else {
+      //   this.$router.push(`evet`);
+      // }
     },
     buttonGroupClick(e) {
       this.workStatus = e;
