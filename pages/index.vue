@@ -9,12 +9,7 @@
         style="padding-top: 100px; padding-bottom: 100px;"
       >
         <h5 style="margin-bottom: 20px;">#SevdiklerimiKorumakİcinBen</h5>
-        <h2 style="margin-bottom:10px;">Dışarı çıkabilmene</h2>
-        <h1
-          style="margin-bottom:10px; font-weight: 500;"
-          v-text="timeleftText"
-        ></h1>
-        <h2 style="margin-bottom: 50px;">kaldı 🥺</h2>
+        <h1 style="margin-bottom:10px;">Şu an dışarı çıkabilir miyim? 🤔</h1>
         <h5>
           Tedbirli ol, Güvende ol, Lysol!
         </h5>
@@ -223,40 +218,17 @@ export default {
     };
   },
   mounted() {
-    var countDownDate = new Date("May 17, 2021 05:00:00").getTime();
-
-    // Update the count down every 1 second
-    var x = setInterval(() => {
-      // Get today's date and time
-      var now = new Date().getTime();
-
-      // Find the distance between now and the count down date
-      var distance = countDownDate - now;
-
-      // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor(
-        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-      );
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      // Display the result in the element with id="demo"
-      this.timeleftText =
-        days +
-        " gün " +
-        hours +
-        " saat " +
-        minutes +
-        " dakika " +
-        seconds +
-        " saniye ";
-      // If the count down is finished, write some text
-      if (distance < 0) {
-        clearInterval(x);
-        this.timeleftText = "Hurraahhh";
-      }
-    }, 1000);
+    let now = new Date();
+    if (
+      now.getHours() >= 21 ||
+      now.getHours() <= 5 ||
+      now.getDay() === 6 ||
+      now.getDay() === 5
+    ) {
+      this.$router.push("hayir");
+    } else {
+      this.$router.push("evet");
+    }
   }
 };
 </script>
